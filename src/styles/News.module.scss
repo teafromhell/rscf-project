@@ -1,0 +1,35 @@
+@import "../variables/variables.scss";
+
+.news_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  h1 {
+    margin-left: 40px;
+  }
+  .news_header_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-right: 40px;
+    cursor: pointer;
+    color: $lightblue;
+    
+    .news_arrow {
+      transition: transform 0.25s ease-in-out;
+    }
+    &:hover {
+      .news_arrow {
+        transform: translateX(8px);
+      }
+    }
+
+    p {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  }
+}
