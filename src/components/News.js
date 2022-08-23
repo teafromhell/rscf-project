@@ -5,7 +5,7 @@ import styles from "../styles/News.module.scss";
 function News() {
   return (
     <div>
-      <div className={styles.news_header}>
+      <div id="news" className={styles.news_header}>
         <h1>Новости</h1>
         <div className={styles.news_header_right}>
           <p>Все новости</p>

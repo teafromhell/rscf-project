@@ -22,26 +22,8 @@ function Header() {
       setTimeout(changeBack, 10000);
     }
     changeBack();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setSize({
-  //       width: window.innerWidth,
-  //       height: window.innerHeight,
-  //     });
-  //   };
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
-
-  // useEffect(() => {
-  //   if (size.width > 768 ) {
-  //     setNavOpen(true);
-  //   }
-  // }, [size.width]);
 
   const sidebarToggle = () => {
     setDrawer(!drawer);
@@ -133,12 +115,15 @@ function Header() {
         </ul>
         <ul className={styles.nav_right}>
           <IoSearchOutline
-          className={styles.icon_search}
+            className={styles.icon_search}
             size={25}
             style={{ color: "white", cursor: "pointer" }}
             onClick={sidebarToggle}
           />
-          <li style={{ padding: "0 20px" }} className={`${toggleIcon} ${styles.eng}`}>
+          <li
+            style={{ padding: "0 20px" }}
+            className={`${toggleIcon} ${styles.eng}`}
+          >
             ENG
           </li>
 
@@ -147,7 +132,6 @@ function Header() {
             <div className={styles.line2}></div>
             <div className={styles.line3}></div>
           </div>
-
         </ul>
       </nav>
 
@@ -289,7 +273,7 @@ function Header() {
       <div className={styles.bottom_nav}>
         <div className={styles.arrow_news}>
           <MdKeyboardArrowDown size={30} />
-          <p>К новостям</p>
+          <a href="#news">К новостям</a>
         </div>
         <div className={styles.icons}>
           <FaTelegramPlane className={styles.icon} size={20} />
