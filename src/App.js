@@ -2,6 +2,8 @@ import Articles from "./components/Articles";
 import Cards from "./components/Cards";
 import Header from "./components/Header";
 import News from "./components/News";
+import Press from "./components/Press";
+import Results from "./components/Results";
 import "./styles/globals.css";
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
       <Cards />
       <News />
       <Articles />
+      <Press />
+      <Results />
     </div>
   );
 }

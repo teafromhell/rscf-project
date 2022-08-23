@@ -1,0 +1,117 @@
+@import "../variables/variables.scss";
+
+.wrapper {
+  background-color: $grey;
+  padding-top: 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 100px;
+
+  h1 {
+    margin-left: 40px;
+  }
+  .header_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-right: 40px;
+    cursor: pointer;
+    color: $lightblue;
+    letter-spacing: 1px;
+
+    .arrow {
+      transition: transform 0.25s ease-in-out;
+      margin-left: 10px;
+    }
+    &:hover {
+      .arrow {
+        transform: translateX(8px);
+      }
+    }
+
+    p {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  }
+}
+
+.grid_form {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 25px;
+}
+
+.single_press {
+  border-top: 1px solid grey;
+
+  cursor: pointer;
+  padding: 15px 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    letter-spacing: 1px;
+    line-height: 26px;
+    width: 90%;
+  }
+
+  .arrow {
+    transition: transform 0.25s ease-in-out;
+    margin-right: 7px;
+    width: 25px;
+  }
+
+  &:hover {
+    color: $lightblue;
+    .arrow {
+      transform: translateX(8px);
+    }
+  }
+}
+
+.btn_wrapper {
+  position: relative;
+  padding-bottom: 200px;
+}
+
+.btn_press {
+  font-size: 14px;
+  padding: 15px 50px;
+  border: none;
+  outline: 1px solid black;
+  background: transparent;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:hover {
+    background: $lightblue;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_form {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+  }
+}
