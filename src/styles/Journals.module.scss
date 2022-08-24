@@ -1,0 +1,149 @@
+@import "../variables/variables.scss";
+
+.wrapper {
+  margin-top: 30px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 100px;
+
+  h1 {
+    margin-left: 40px;
+  }
+  .header_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-right: 40px;
+    cursor: pointer;
+    color: $lightblue;
+    letter-spacing: 1px;
+
+    .arrow {
+      transition: transform 0.25s ease-in-out;
+      margin-left: 10px;
+    }
+    &:hover {
+      .arrow {
+        transform: translateX(8px);
+      }
+    }
+
+    p {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  }
+}
+
+.wrapper_car {
+  margin-bottom: 45px;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 600px));
+  gap: 20px;
+
+  justify-content: center;
+}
+
+.arrow_left,
+.arrow_right {
+  position: absolute;
+  bottom: 20px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.arrow_left {
+  right: 55%;
+}
+
+.arrow_right {
+  left: 55%;
+}
+
+.car {
+  background-color: $grey;
+
+  cursor: pointer;
+  height: 650px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.single_journo {
+  opacity: 0;
+  transition: opacity ease-in-out 0.4s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  padding: 5px 20px;
+  p {
+    margin: 20px 0;
+    text-align: center;
+  }
+  img {
+    object-fit: cover;
+  }
+}
+
+.active {
+  opacity: 1;
+}
+
+.right {
+  height: 650px;
+  background-color: $grey;
+  //margin-top: 100px;
+  margin-bottom: 150px;
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  h3 {
+    color: $lightblue;
+  }
+
+  p {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  button {
+    color: $lightblue;
+    font-family: "Gilroy";
+    font-size: 14px;
+    padding: 15px 50px;
+    border: none;
+    outline: 1px solid $lightblue;
+    background: transparent;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    transition: 0.3s;
+    &:hover {
+      background: $lightblue;
+      color: white;
+    }
+  }
+}

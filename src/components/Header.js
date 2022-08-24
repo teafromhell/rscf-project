@@ -160,8 +160,8 @@ function Header() {
                 <li>
                   <div className={styles.sidebar_li}>
                     <div className={styles.sidebar_li_title}>
-                      <MdKeyboardArrowDown size={27} />
-                      <MdKeyboardArrowUp size={27} />
+                      {/* <MdKeyboardArrowDown size={27} />
+                      <MdKeyboardArrowUp size={27} /> */}
                       <h1>конкурсы</h1>
                     </div>
                     <div className={styles.sidebar_li_body}>
@@ -179,8 +179,8 @@ function Header() {
                 <li>
                   <div className={styles.sidebar_li}>
                     <div className={styles.sidebar_li_title}>
-                      <MdKeyboardArrowDown size={27} />
-                      <MdKeyboardArrowUp size={27} />
+                      {/* <MdKeyboardArrowDown size={27} />
+                      <MdKeyboardArrowUp size={27} /> */}
                       <h1>о фонде</h1>
                     </div>
 
@@ -198,8 +198,8 @@ function Header() {
                 <li>
                   <div className={styles.sidebar_li}>
                     <div className={styles.sidebar_li_title}>
-                      <MdKeyboardArrowDown size={27} />
-                      <MdKeyboardArrowUp size={27} />
+                      {/* <MdKeyboardArrowDown size={27} />
+                      <MdKeyboardArrowUp size={27} /> */}
                       <h1>новости</h1>
                     </div>
 
@@ -220,8 +220,8 @@ function Header() {
                 <li>
                   <div className={styles.sidebar_li}>
                     <div className={styles.sidebar_li_title}>
-                      <MdKeyboardArrowDown size={27} />
-                      <MdKeyboardArrowUp size={27} />
+                      {/* <MdKeyboardArrowDown size={27} />
+                      <MdKeyboardArrowUp size={27} /> */}
                       <h1>документы</h1>
                     </div>
                   </div>
@@ -229,8 +229,8 @@ function Header() {
                 <li>
                   <div className={styles.sidebar_li}>
                     <div className={styles.sidebar_li_title}>
-                      <MdKeyboardArrowDown size={27} />
-                      <MdKeyboardArrowUp size={27} />
+                      {/* <MdKeyboardArrowDown size={27} />
+                      <MdKeyboardArrowUp size={27} /> */}
                       <h1>контакты</h1>
                     </div>
                   </div>
@@ -238,8 +238,8 @@ function Header() {
                 <li>
                   <div className={styles.sidebar_li}>
                     <div className={styles.sidebar_li_title}>
-                      <MdKeyboardArrowDown size={27} />
-                      <MdKeyboardArrowUp size={27} />
+                      {/* <MdKeyboardArrowDown size={27} />
+                      <MdKeyboardArrowUp size={27} /> */}
                       <h1>иас</h1>
                     </div>
                   </div>
