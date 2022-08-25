@@ -17,7 +17,7 @@ import "swiper/scss/pagination";
 import "swiper/scss/navigation";
 
 // import required modules
-// import { Pagination, Navigation } from "swiper";
+// import { Navigation } from "swiper";
 
 function Cards() {
   // const settings = {
