@@ -3,6 +3,7 @@
 .cards {
   margin: 80px 0;
   padding: 40px;
+
   // width: 100%;
 
   // display: grid;
@@ -97,7 +98,7 @@
 }
 
 // .swiper-button-next {
-  
+
 //   background-color: red;
 //   width: 40px;
 //   transform: translateY(-300%);
@@ -156,3 +157,10 @@
 //     width: 1024px;
 //   }
 // }
+
+@media only screen and (min-width: 1400px) {
+  .cards {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
